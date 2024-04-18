@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6F4EF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="600dp"
+        android:layout_height="230dp"
+        android:layout_marginStart="-100dp"
+        android:layout_marginTop="124dp"
+        android:background="#A8C2EC"
+        android:rotation="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#081A80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="600dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="-50dp"
+        android:layout_marginTop="448dp"
+        android:background="#912119"
+        android:rotation="-7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Main Course"
+        android:textColor="#081A80"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtSnack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Snack"
+        android:textColor="#081A80"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/txtFood"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDrinks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="272dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Drinks"
+        android:textColor="#081A80"
+        android:textSize="28sp"
+        app:layout_constraintStart_toStartOf="@+id/txtSnack"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCost"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="196dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Toatal Cost:"
+        android:textColor="#F6F4EF"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtDrinks" />
+
+    <TextView
+        android:id="@+id/txtFood1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#081A80"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtFood"
+        app:layout_constraintStart_toStartOf="@+id/txtFood" />
+
+    <TextView
+        android:id="@+id/txtSnack1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#081A80"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSnack"
+        app:layout_constraintStart_toStartOf="@+id/txtSnack" />
+
+    <TextView
+        android:id="@+id/txtDrinks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="228dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#081A80"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtDrinks"
+        app:layout_constraintStart_toStartOf="@+id/txtDrinks"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/txtCost1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="176dp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#F6F4EF"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCost"
+        app:layout_constraintEnd_toEndOf="@+id/view" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#081A80"
+        android:fontFamily="sans-serif-black"
+        android:text="Confirm"
+        android:textColor="#F5F3EE"
+        android:textSize="24sp"
+        app:iconTint="#F5F3EE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#F5F3EE" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ORDER"
+        android:textColor="#FAF8F2"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="320dp"
+        android:rotation="8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piccccc" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="560dp"
+        android:rotation="-10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/picc5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
